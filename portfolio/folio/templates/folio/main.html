@@ -1,0 +1,20 @@
+{% extends 'folio/base.html' %}
+
+{% block content %}
+	<div id='photos'>
+		{% include 'folio/photos.html' %}
+	</div>
+	<div id='contact'>
+		{% include 'folio/contacts.html' %}
+	</div>
+	<div id='about'>
+		{% include 'folio/about.html' %}
+	</div>
+	<div id='social'>
+		<a href="http://www.instagram.com/l_vaka" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		<a href="http://www.twitter.com/ejinshin" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	</div>
+	<footer>
+		<p>Website and Photography by Eric J. Shin - Copyright 2017</p>
+	</footer>
+{% endblock %}

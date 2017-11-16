@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+h1 {
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1.1rem;
+}
+
+.subtext{
+	font-size: 1rem;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+body {
+	background: rgb(246, 246, 246);
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 17rem 1fr;
+	grid-template-areas:
+		"thesidebar contentbody";
+}
+
+#sidebar{
+	color: rgb(252, 252, 252);
+	width: 16rem;
+	background: rgb(35, 36, 38);
+	margin:0;
+	padding-left: 1rem;
+	grid-area: thesidebar;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+}
+
+/*Sidebar Styling*/
+#sidebar h1{
+	font-family: 'Great Vibes', cursive;
+	margin-bottom: 0;
+}
+
+#sidebar .subtext{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#sidebar ul{
+	padding: 0;
+	margin: 0;
+	margin-left: 1rem;
+	margin-top: 2rem;
+	list-style: none;
+}
+
+#sidebar ul li{
+	padding-bottom: 0.5rem;
+}
+
+#sidebar ul li a, #sidebar ul li a:visited{
+	transition: 0.3s;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: rgb(240, 240, 251);
+}
+
+#sidebar ul li a:hover, #sidebar ul li a:active{
+	letter-spacing: 0.3rem;
+	color: rgb(124, 130, 150)
+}
+/*End of Sidebar Styling*/
+
+#content{
+	font-family: 'Ubuntu Condensed', sans-serif;
+	margin: 0;
+	grid-area: contentbody;
+}
+
+/*Photogrid Styling*/
+#photos{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+}
+/*end Photogrid Styling*/
+
+/*Contact Styling*/
+#contact{
+	background: rgb(198, 229, 255);
+	text-align: center;
+	padding: 4rem 14rem 4rem 14rem;
+}
+
+#contact h1{
+	margin-bottom: 0;
+}
+
+#contact p{
+	text-align: justify;
+}
+
+#contact a, #contact a:visited{
+	transition: 0.3s;
+	color: rgb(58, 95, 224);
+}
+
+#contact a:hover, #contact a:active{
+	color: rgb(255, 236, 206);
+}
+
+#contact .fa-envelope-o{
+	margin-top: 0;
+	font-size: 3rem;
+	text-shadow: 0.1rem 0.1rem 4px rgb(14,14,14);
+}
+/*end contact styling*/
+
+/*about styling*/
+#about {
+	background: rgb(255, 241, 219);
+	text-align: center;
+	padding: 4rem 14rem 4rem 14rem;
+}
+
+#about p{
+	text-align: justify;
+}
+/*end about styling*/
+
+/*Social Media Styling*/
+#social{
+	text-shadow: 0.1rem 0.1rem 4px rgb(14,14,14);
+	background: rgb(198, 229, 255);
+	padding: 3rem 0 3rem 0;
+	font-size: 3rem;
+	text-align: center;
+	letter-spacing: 1rem;
+}
+
+#social a, #social a:visited{
+	transition: 0.3s;
+	color: rgb(58, 95, 224);
+}
+
+#social a:hover, #social a:active{
+	color: rgb(255, 236, 206);
+}
+/*end Social Media Styling*/
+
+/*Footer Styling*/
+footer {
+	padding: 0.5rem 0 0 0.5rem;
+	background: rgb(163, 163, 163);
+}
+
+footer p{
+	line-height: 1.9rem;
+	color: rgb(252, 252, 252);
+	margin: 0 0.5rem 0 0.5rem;
+	font-size: 0.9rem;
+	text-align: left;
+}
+/*end footer*/
