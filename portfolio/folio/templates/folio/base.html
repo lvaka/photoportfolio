@@ -3,9 +3,9 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
-		<!--
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="{% static 'scripts/myscript.js' %}"></script>-->
+		<script src="{% static 'scripts/myscripts.js' %}"></script>
+		<link href="{% static 'images/favicon.png' %}" rel="icon" type="image/x-icon" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>LVaka Photography</title>
 	</head>
@@ -14,9 +14,9 @@
 			<h1>LVaka Photography</h1>
 			<p class='subtext'>Food Photographer</p>
 			<ul>
-				<li><a href="#">Photos</a></li>
-				<li><a href="#">Contact</a></li>
-				<li><a href="#">About</a></li>
+				<li><a href="#" onclick="photoScroll()">Photos</a></li>
+				<li><a href="#" onclick="contactsScroll()">Contact</a></li>
+				<li><a href="#" onclick="aboutScroll()">About</a></li>
 			</ul>
 		</div>
 		<div id='content'>
