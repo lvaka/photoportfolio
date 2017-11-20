@@ -1,7 +1,10 @@
-<h1>Photos will go here</h1>
-<h1>Photos will go here</h1>
-<h1>Photos will go here</h1>
-<h1>Photos will go here</h1>
-<h1>Photos will go here</h1>
-<h1>Photos will go here</h1>
-<h1>Photos will go here</h1>
+{% load thumbnail %}
+
+{% for pic in pics %}
+	{% thumbnail pic.image "400x400" crop="center" as im %}
+		<img src="{{ im.url }}">
+	{% endthumbnail %}
+{% endfor %}
+
+
+    

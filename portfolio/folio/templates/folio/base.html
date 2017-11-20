@@ -4,6 +4,7 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>		
 		<script src="{% static 'scripts/myscripts.js' %}"></script>
 		<link href="{% static 'images/favicon.png' %}" rel="icon" type="image/x-icon" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +19,11 @@
 				<li><a href="#" onclick="contactsScroll()">Contact</a></li>
 				<li><a href="#" onclick="aboutScroll()">About</a></li>
 			</ul>
+			{% if user.is_authenticated %}
+			<div id="add_images">
+				<a href="#" onclick="slideForm()"><i class="fa fa-plus" aria-hidden="true"></i></a>
+			</div>
+			{% endif %}
 		</div>
 		<div id='content'>
 			{% block content %}

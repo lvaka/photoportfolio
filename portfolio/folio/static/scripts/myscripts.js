@@ -14,3 +14,7 @@ function contactsScroll(){
 function aboutScroll(){
 	$('html, body').animate({scrollTop: ($('#about').offset().top)},800);
 };
+
+function slideForm(){
+	$(upload_form).toggle("slide", { direction: "left" }, 500);
+}

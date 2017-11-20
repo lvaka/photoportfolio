@@ -8,3 +8,5 @@ from . import views
 urlpatterns = [
 	url(r'^$', views.main_page, name='main_page'),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
