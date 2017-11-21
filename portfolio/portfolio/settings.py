@@ -115,7 +115,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-TEMPLATE_DEBUG = True
+# Template Debug switch only for SORL-thumbnail
+TEMPLATE_DEBUG = False
 THUMBNAIL_DEBUG = True
 
 
