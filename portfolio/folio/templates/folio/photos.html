@@ -2,7 +2,7 @@
 
 {% for pic in pics %}
 	{% thumbnail pic.image "400x400" crop="center" as im %}
-		<img src="{{ im.url }}">
+		<img src="{{ im.url }}" alt="{{ pic.name }}" meta="{{ pic.image.url}}" class="image" onclick="openModal('{{ pic.name }}')">
 	{% endthumbnail %}
 {% endfor %}
 

@@ -15,9 +15,9 @@
 			<h1>LVaka Photography</h1>
 			<p class='subtext'>Food Photographer</p>
 			<ul>
-				<li><a href="#" onclick="photoScroll()">Photos</a></li>
-				<li><a href="#" onclick="contactsScroll()">Contact</a></li>
-				<li><a href="#" onclick="aboutScroll()">About</a></li>
+				<li><a href="#" onclick="scrollsTo('#photos')">Photos</a></li>
+				<li><a href="#" onclick="scrollsTo('#contact')">Contact</a></li>
+				<li><a href="#" onclick="scrollsTo('#about')">About</a></li>
 			</ul>
 			{% if user.is_authenticated %}
 			<div id="add_images">
@@ -28,6 +28,21 @@
 		<div id='content'>
 			{% block content %}
 			{% endblock %}
+		</div>
+		<div class="modal">
+			<div class="left_arrow" onclick="prevImage()">
+			</div>
+			<div class="modal_content">
+				<img src="#" id="modalImage" alt="#" />
+			</div>
+			<div class="right_arrow" onclick="nextImage()">
+			</div>
+			<div class="close" onclick="closeModal()">
+				<i class="fa fa-window-close-o" aria-hidden="true"></i>
+			</div>
+			<div class="modal_thumbnails">
+				{% include 'folio/photos.html' %}
+			</div>
 		</div>
 	</body>
 </html>
