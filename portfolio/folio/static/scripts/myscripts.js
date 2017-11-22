@@ -63,16 +63,16 @@ function nextImage() {
 	var currentIndex = findIndex();
 	var imageList = document.getElementsByClassName("image");
 
-	if (currentIndex < imageList.length - 1)
+	if (currentIndex < imageList.length/2 - 1)
 	{
 		currentIndex++;
 		$('#modalImage').attr('src', imageList[currentIndex].getAttribute('meta'));
 		$('#modalImage').attr('alt', imageList[currentIndex].getAttribute('alt'));
-	} else if (currentIndex == imageList.length - 1) {
+	} else if (currentIndex == imageList.length/2 - 1) {
 		console.log("Index is already at End");
 	} 
 	else {
-		currentIndex = imageList.length - 1;
+		currentIndex = imageList.length/2 - 1;
 		console.log ("Error with nextImage function");
 	}
 }
