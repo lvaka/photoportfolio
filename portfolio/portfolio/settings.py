@@ -75,12 +75,26 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if (DEBUG):
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
+
+else:
+    #Dreamhost Setup
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'lvaka_mydatabase',
+            'USER': 'lvaka',
+            'PASSWORD': 'holygrail',
+            'HOST': 'mysql.lvakadesigns.com',
+            'PORT': '3306',
+        }
+    }
 
 
 # Password validation
@@ -117,7 +131,7 @@ USE_TZ = True
 
 # Template Debug switch only for SORL-thumbnail
 TEMPLATE_DEBUG = False
-THUMBNAIL_DEBUG = True
+THUMBNAIL_DEBUG = False
 
 
 # Static files (CSS, JavaScript, Images)

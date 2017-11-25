@@ -238,25 +238,37 @@ footer p{
 }
 
 .left_arrow {
-	justify-self: center;
+	justify-self: end;
 	align-self: center;
+	margin-right: 2em;
 	grid-area: left;
 	width: 0;
 	height: 0;
 	border-top: 2rem solid transparent;
 	border-bottom: 2rem solid transparent;
-	border-right: 2rem solid rgb(252, 252, 252);;
+	border-right: 2rem solid rgb(252, 252, 252);
 }
 
 .right_arrow {
-	justify-self: center;
+	justify-self: start;
 	align-self: center;
+	margin-left: 2em;
 	grid-area: right;
 	width: 0;
 	height: 0;
 	border-top: 2rem solid transparent;
 	border-bottom: 2rem solid transparent;
-	border-left: 2rem solid rgb(252, 252, 252);;
+	border-left: 2rem solid rgb(252, 252, 252);
+}
+
+.right_arrow:hover {
+	transition: 0.3s;
+	border-left-color: rgba(255,255,255, 0.4);
+}
+
+.left_arrow:hover {
+	transition: 0.3s;
+	border-right-color: rgba(255,255,255, 0.4);
 }
 
 .modal_content {
@@ -282,6 +294,7 @@ footer p{
 	overflow-x: auto;
 	overflow-y: hidden;
 	margin-bottom: 0.1rem;
+	margin-top: 0.4em;
 }
 
 .modal_thumbnails img{
@@ -296,11 +309,17 @@ footer p{
 }
 
 .close {
-	justify-self: center;
+	justify-self: start;
 	align-self: end;
+	margin-left: 2.4em;
 	grid-area: closeModal;
 	color: rgb(240, 240, 251);
 	font-size: 1.4rem;
+}
+
+.close:hover {
+	transition: 0.3s;
+	color: rgba(255, 255, 255, 0.4);
 }
 /*end styling for slide show*/
 
