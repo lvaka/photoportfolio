@@ -2,7 +2,7 @@ import os
 import sys
 
 cwd = os.getcwd()
-env_dir = os.path.join(cwd, 'env')
+env_dir = os.path.join(cwd, 'ENV')
 project_dir = os.path.join(cwd, 'portfolio')
 
 # Use the python executable from inside our virtualenv
