@@ -23,6 +23,13 @@
 			<div id="add_images">
 				<a href="#" onclick="slideForm()"><i class="fa fa-plus" aria-hidden="true"></i></a>
 			</div>
+			<div class="login_text">
+				<a href="{% url 'logout' %}">Log Out</a>
+			</div>
+			{% else %}
+			<div class="login_text">
+				<a href="{% url 'login' %}">Login</a>
+			</div>
 			{% endif %}
 		</div>
 		<div id='content'>

@@ -75,6 +75,28 @@ body {
 	letter-spacing: 0.3rem;
 	color: rgb(124, 130, 150);
 }
+
+.login_text{
+	position:absolute;
+	width: inherit;
+	bottom: 0;
+	margin-bottom: 4rem;
+	margin-left: 1rem;
+}
+
+.login_text a, .login_text a:visited{
+	transition: 0.3s;
+	position: absolute;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	color: rgb(240, 240, 251);
+	font-size: 0.8rem;
+}
+
+.login_text a:hover, .login_text a:active{
+	letter-spacing: 0.3rem;
+	color: rgb(124, 130, 150);
+	
+}
 /*End of Sidebar Styling*/
 
 #content{
@@ -430,6 +452,16 @@ footer p{
 
 	#sidebar ul li a, #sidebar ul li a:visited{
 		font-size: 1.2rem;
+	}
+
+	.login_text{
+		width: 3rem;
+		text-align: left;
+		margin: inherit;
+		position: absolute;
+		top: 0.5rem;
+		right: 0.3rem;
+		left: initial;
 	}
 
 	#content{
