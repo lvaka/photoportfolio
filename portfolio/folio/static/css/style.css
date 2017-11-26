@@ -3,9 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
-* {
-	box-sizing: border-box;
-}
 
 h1 {
 	font-size: 2rem;
@@ -246,6 +243,7 @@ footer p{
 
 /*styling for modal slideshow*/
 .modal {
+	box-sizing: border-box;
 	overflow: hidden;
 	background: rgba(0,0,0,0.7);
 	position: fixed;
