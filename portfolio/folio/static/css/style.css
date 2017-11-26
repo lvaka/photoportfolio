@@ -411,6 +411,10 @@ footer p{
 		padding: 2rem 0.1rem 2rem 0.1rem;
 	}
 
+	#modalImage {
+		width: 60vw;
+	}
+
 }
 
 @media only screen and (max-device-width: 750px){
