@@ -505,7 +505,10 @@ footer p{
 	}
 
 	#modalImage {
-		width: 75vw;
+		max-width: 60vw;
+	}
+	#modal {
+		max-width: 100%;
 	}
 
 }
